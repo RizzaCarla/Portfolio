@@ -892,7 +892,7 @@ input, select, textarea {
 		}
 
 		.image.filtered.tinted:after {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25)), linear-gradient(0deg, rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125));
+			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(255, 196, 0, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25)), linear-gradient(0deg, rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125));
 			background-size: 128px 128px, auto, auto;
 		}
 
@@ -2551,6 +2551,10 @@ input, select, textarea {
 			width: 65rem;
 		}
 
+		.panel.xlarge {
+			width: 125rem;
+		}
+
 		.panel.small .span-0-25, .panel.medium .span-0-25, .panel.large .span-0-25 {
 			width: 2.5%;
 		}
@@ -3479,6 +3483,7 @@ input, select, textarea {
 
 	}
 
+
 /* Page Wrapper */
 
 	#page-wrapper {
@@ -3686,4 +3691,40 @@ input, select, textarea {
 				transform: none;
 			}
 
+	}
+
+.list > span {
+	border: 1px solid lightgray;
+	padding: 2px 5px;
+	margin: 10px;
+}
+
+#skills {
+	color: rgba(255, 255, 255, 0.75);
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.65;
+	font-weight: thin;
+}
+
+.project-image {
+	height: 70%;
+	width: 65%;
+	/* border: 5px solid white; */
+}
+
+ul#sidebar.actions {
+	display: flex;
+	flex-direction: row;
+	/* background-color: white; */
+	align-items: center;
+	position: fixed;
+	padding: 20px;
+	z-index: 1;
+	margin-left: 5px;
+}
+
+	#sidebar > li {
+		padding: 0px;
 	}
