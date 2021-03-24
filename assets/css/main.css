@@ -3709,15 +3709,14 @@ input, select, textarea {
 }
 
 .project-image {
-	height: 70%;
-	width: 65%;
-	/* border: 5px solid white; */
+	height: 100%;
+	width: 100%;
+	border-radius: 5px;
 }
 
 ul#sidebar.actions {
 	display: flex;
 	flex-direction: row;
-	/* background-color: white; */
 	align-items: center;
 	position: fixed;
 	padding: 20px;
@@ -3727,4 +3726,26 @@ ul#sidebar.actions {
 
 	#sidebar > li {
 		padding: 0px;
+	}
+
+	#projects > div.inner {
+		/* border-right: 250px double rgb(255, 166, 0); */
+	}
+
+	#projects > div.inner:last-child {
+		border-right: none;
+	}
+
+	.website-links {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.website-links > li {
+		margin-left: 165px;
+	}
+
+	.website-links > li > a,
+	ul.contact-icons.color1 > a {
+		border-bottom: none;
 	}
